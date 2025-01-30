@@ -102,37 +102,19 @@ input:focus {
 
 /* Button Styling */
 button {
-    background: linear-gradient(to right, #E5989B, #B5828C); /* Gradient background */
+    background: linear-gradient(to right, #E5989B, #B5828C);
     color: white;
     border: none;
     padding: 12px;
-    width: 100%; /* Make button full width */
+    width: 100%;
     cursor: pointer;
     font-size: 18px;
     border-radius: 8px;
     font-weight: bold;
-    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+    transition: all 0.3s ease-in-out;
     margin: 5px;
+    scroll-padding: 100px;
 }
-
-/* Hover Effect */
-button:hover {
-    background: linear-gradient(to right, #B5828C, #E5989B); /* Reversed gradient on hover */
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
-}
-
-/* Active (when clicked) */
-button:active {
-    background: linear-gradient(to right, #B5828C, #E5989B); /* Keep hover gradient when clicked */
-    transform: scale(1); /* Button returns to normal size */
-}
-
-/* Focus (when the button is focused, for accessibility) */
-button:focus {
-    outline: none; /* Remove default outline */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow to indicate focus */
-}
-
 
 button:hover {
     background: linear-gradient(to right, #B82132, #D2665A);
