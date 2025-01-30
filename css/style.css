@@ -1,6 +1,6 @@
 
 
-/* Reset Default */
+
 * {
     margin: 0;
     padding: 0;
@@ -30,6 +30,7 @@ body {
     font-weight: bold;
     color: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Container */
@@ -101,21 +102,40 @@ input:focus {
 
 /* Button Styling */
 button {
-    background: linear-gradient(to right, #E5989B, #B5828C);
+    background: linear-gradient(to right, #E5989B, #B5828C); /* Gradient background */
     color: white;
     border: none;
     padding: 12px;
-    width: 100%;
+    width: 100%; /* Make button full width */
     cursor: pointer;
     font-size: 18px;
     border-radius: 8px;
     font-weight: bold;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
     margin: 5px;
 }
 
+/* Hover Effect */
 button:hover {
-    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    background: linear-gradient(to right, #B5828C, #E5989B); /* Reversed gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Active (when clicked) */
+button:active {
+    background: linear-gradient(to right, #B5828C, #E5989B); /* Keep hover gradient when clicked */
+    transform: scale(1); /* Button returns to normal size */
+}
+
+/* Focus (when the button is focused, for accessibility) */
+button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow to indicate focus */
+}
+
+
+button:hover {
+    background: linear-gradient(to right, #B82132, #D2665A);
     transform: scale(1.05);
 }
 
@@ -144,7 +164,8 @@ button:hover {
 }
 
 .hasil-bmi{
-    background: #FFEDFA;
+    background: #D2665A;
+    color: white;
     font-size: 16px;
     padding: 20px;
     margin: 20px auto;

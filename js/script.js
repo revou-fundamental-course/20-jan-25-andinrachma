@@ -15,19 +15,31 @@ function calculateBmi() {
     // Tentukan kategori BMI
     let kategori = "";
     if (bmi < 18.5) {
-        kategori = "Berat Badan Kurang 😟";
+        kategori = "Berat Badan Kurang ";
     } else if (bmi >= 18.5 && bmi < 24.9) {
-        kategori = "Berat Badan Ideal 😊";
+        kategori = "Berat Badan Ideal ";
     } else if (bmi >= 25 && bmi < 29.9) {
-        kategori = "Kelebihan Berat Badan 😯";
+        kategori = "Kelebihan Berat Badan";
     } else {
-        kategori = "Obesitas ⚠️";
+        kategori = "Obesitas ";
     }
 
     // Tampilkan hasil
-    document.getElementById("result-bmi").textContent = `BMI Anda: ${bmi}`;
-    document.getElementById("category").textContent = kategori;
+    let resultContainer = document.getElementById("hasil-bmi-container");
+    let resultText = document.getElementById("result-bmi");
+    let categoryText = document.getElementById("category");
+
+    resultText.textContent = `BMI Anda: ${bmi}`;
+    categoryText.textContent = kategori;
 
     // Scroll ke hasil dengan animasi smooth
-    document.getElementById("hasil-bmi-container").scrollIntoView({ behavior: "smooth" });
+    resultContainer.scrollIntoView({ behavior: "smooth", block: "center" });
+
+    // Tambahkan efek highlight untuk beberapa detik
+    resultContainer.style.transition = "background 0.5s ease-in-out";
+    resultContainer.style.background = "#FFDAB9"; // Warna highlight
+
+    setTimeout(() => {
+        resultContainer.style.background = ""; // Kembali ke warna asli
+    }, 1500);
 }
