@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>Kalkulator BMI</h1>
+    </header>
+
+    <main>
+        <section>
+            <div class="container-coment">
+                <p>✅ Gunakan kalkulator BMI ini untuk mengetahui apakah berat badan Anda ideal, kurang, atau berlebih. Perhatikan kesehatan tubuh Anda dengan informasi yang akurat!.</p>
+                <p>✅ Cek indeks massa tubuh (BMI) Anda dengan mudah dan cepat Dapatkan! panduan untuk menjaga berat badan yang sehat dan seimbang.</p>
+            <div class="coment"> 
+                    <p>📌 "Kalkulator BMI (Body Mass Index) adalah alat yang digunakan untuk mengukur apakah berat badan Anda ideal berdasarkan tinggi dan berat badan Anda. Dengan mengetahui BMI, Anda dapat memahami apakah Anda berada dalam kategori kurus, normal, atau obesitas."
+                    "Masukkan berat badan dan tinggi badan Anda, lalu tekan tombol 'Hitung BMI'. Kami akan memberikan hasil yang cepat dan akurat serta kategori BMI Anda!"</p></div>
+            </div>
+            <!-- Introduction -->
+            <div class="container"> 
+               
+            
+                <!-- Form -->
+                <form>
+                    <div class="form-group">
+                        <label for="input-berat-badan">Berat Badan (kg)</label>
+                        <input type="number" id="input-berat-badan">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-usia">Usia (tahun)</label>
+                        <input type="number" id="input-usia">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-tinggi-badan">Tinggi Badan (cm)</label>
+                        <input type="number" id="input-tinggi-badan">
+                    </div>
+
+                    <div>
+                        <button type="button" onclick="calculateBmi()">Hitung BMI</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>     
+            </div>
+
+            <!-- Feature Information + Hasil -->
+            <article class="result-container">
+                <header>
+                    <h2>Information</h2>
+                </header>
+
+                <div class="hasil-bmi"><p>Kategori Hasil BMI:</p>
+                    <ul>
+                            <li>BMI < 18.5 → Berat badan kurang 😟</li>
+                            <li>BMI 18.5 - 24.9 → Berat badan ideal 😊</li>
+                            <li>BMI 25 - 29.9 → Kelebihan berat badan 😯</li>
+                            <li>BMI ≥ 30 → Obesitas ⚠️</li>
+                            </ul>
+                <p>📢 "Jaga kesehatan Anda dengan mengetahui kategori BMI dan tips untuk mencapai berat badan ideal!"</p>
+                </div>
+
+
+                <!-- Hasil BMI -->
+                <div class="result-section" id="hasil-bmi-container">
+                    <h2>Hasil</h2>
+                    <span id="result-bmi">0</span>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <span>📍 "Disclaimer: Kalkulator BMI ini hanya alat pengukur sederhana dan bukan diagnosis medis. Untuk saran lebih lanjut, konsultasikan dengan dokter atau ahli gizi."
+
+            ✅ "Jaga pola makan, olahraga teratur, dan pastikan berat badan Anda tetap ideal untuk hidup lebih sehat!"</span>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

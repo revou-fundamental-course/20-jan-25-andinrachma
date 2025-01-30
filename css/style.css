@@ -1,0 +1,178 @@
+
+
+/* Reset Default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background Gradient */
+body {
+    background: linear-gradient(to right, #FFCDB2, #FFB4A2);
+    color: #333;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Header */
+.main-header {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    padding: 15px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Container */
+.container {
+    background: white;
+    width: 500px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+.container-coment {
+    background: #FCE7C8;
+    width: 60%;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.coment{
+    background: #FFB4A2;
+    font-size: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Form Styling */
+form {
+    margin-top: 15px;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #4facfe;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(79, 172, 254, 0.5);
+}
+
+/* Button Styling */
+button {
+    background: linear-gradient(to right, #E5989B, #B5828C);
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    margin: 5px;
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    transform: scale(1.05);
+}
+
+#result-bmi {
+    font-size: 32px;
+    font-weight: bold;
+    color: #d36699;
+    transition: transform 0.3s ease-in-out;
+}
+
+#category {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Animasi ketika hasil BMI muncul */
+.result-section {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    margin: 20px auto;
+}
+
+.hasil-bmi{
+    background: #FFEDFA;
+    font-size: 16px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    width: 60%;
+    text-align: left;
+}
+
+
+
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    font-size: 13px;
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    width: 100%;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+/* Responsiveness */
+@media screen and (max-width: 480px) {
+    .container, .result-section {
+        width: 90%;
+    }
+}
